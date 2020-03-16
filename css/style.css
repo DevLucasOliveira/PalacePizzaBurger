@@ -8983,3 +8983,8 @@ textarea.form-control {
   .mb-4{
     text-align: center;
   }
+
+  .reais {
+    font-style: italic; 
+  }
+
