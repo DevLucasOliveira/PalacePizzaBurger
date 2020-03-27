@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -65,7 +65,7 @@
                         <p><a href="https://api.whatsapp.com/send?phone=5511952265840&text=Quero%20pizza" class="btn btn-primary p-3 px-xl-4 py-xl-3">Peça agora</a> <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Veja o menu</a></p>
                     </div>
                     <div class="col-md-6 ftco-animate">
-                        <img src="images/bg_1.png" class="img-fluid" alt="">
+                        <img src="images/capasitepizza.png" class="img-fluid" alt="">
                     </div>
                     <p class="imagens">Imagens meramente ilustrativas</p>
                 </div>
@@ -84,7 +84,7 @@
                         <p><a href="https://api.whatsapp.com/send?phone=5511952265840&text=Quero%20lanche" class="btn btn-primary p-3 px-xl-4 py-xl-3">Peça agora</a> <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Veja o menu</a></p>
                     </div>
                     <div class="col-md-6 ftco-animate">
-                        <img src="images/burgercapa.png" class="img-fluid" alt="">
+                        <img src="images/capalanche.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -312,6 +312,10 @@
                     <h2 class="mb-4">Menu</h2>
                     <p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
                     <p class="mt-5">Monte a sua pizza em 2 ou 3 partes com os sabores de nosso menu.</p>
+                    <p>Cobramos pelo preço da pizza de maior valor.</p>
+                    <p>Todas as pizzas salgadas acompanham molho de tomate, orégano e azeitonas.</p>
+                    <h5>Borda recheada R$ 6,00</h5>
+                    <p>Catupiry - Cheddar - Calabresa - Mussarela</p>
                 </div>
             </div>
             <div class="row">
@@ -706,19 +710,19 @@
                 </div>
                 <div class="col-md-6 appointment ftco-animate">
                     <h3 class="mb-3">Contate-nos</h3>
-                    <form action="#" class="appointment-form">
+                    <form action="./email.php" class="appointment-form" method="POST">
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input type="text" class="form-control" name="iname" placeholder="Nome">
                             </div>
                         </div>
                         <div class="d-me-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Sobrenome">
+                                <input type="text" class="form-control" name="iemail" placeholder="E-mail">
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Mensagem"></textarea>
+                            <textarea cols="30" rows="3" name="imessage" class="form-control" placeholder="Mensagem"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
