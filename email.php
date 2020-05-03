@@ -1,7 +1,6 @@
 <?php
-
-
 if(isset($_POST['iemail']) && !empty($_POST['iemail'])){
+header('Location: index.html');
 
 $nome = addslashes($_POST['iname']);
 $email = addslashes($_POST['iemail']);
@@ -28,5 +27,4 @@ if(mail($to, $subject, $body, $header)){
 
 }
 }
-
 ?>

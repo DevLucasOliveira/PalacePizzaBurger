@@ -5,6 +5,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@media(max-width: 700px){ 
+    .slider-item {
+        overflow: scroll;
+     }
+     
+}
+ 
+ 
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
